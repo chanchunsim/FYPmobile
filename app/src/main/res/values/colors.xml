@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="little_white_black">#414542</color>
+    <color name="little_black_white">#c3d6c8</color>
+    <color name="sign_in_btn_bng">#266bd1</color>
+    <color name="link_color">#316F92</color>
+    <color name="orange_bng">#f5995f</color>
+    <color name="approved_green">#82e893</color>
+    <color name="pending_yellow">#F7ED95</color>
+    <color name="rejected_red">#cc4343</color>
+    <color name="overdue_red">#a61616</color>
+    <color name="waiting_yellow">#a89c2c</color>
+    <color name="tooltip_bg">#FFB45A</color>
+    <color name="balloon_overlay">#C3000000</color>
+    <color name="approved_blue">#9EEFF2</color>
+
+    <color name="c_approved_green">#36c73b</color>
+    <color name="c_revised_blue">#2eb8a5</color>
+    <color name="c_havent_gray">#77807e</color>
+    <color name="c_pending_yellow">#bda72f</color>
+
+</resources>

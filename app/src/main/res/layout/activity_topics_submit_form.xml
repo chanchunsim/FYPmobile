@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.TopicsSubmitForm">
+
+
+    <Button
+        android:id="@+id/submit_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/sign_in_btn_bng"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:text="SUBMIT"
+        android:textSize="@dimen/sign_in_btn_text_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/abstracts_et" />
+
+    <EditText
+        android:id="@+id/topic_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1776D"
+        android:hint="Title"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <EditText
+        android:id="@+id/abstracts_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#E1776D"
+        android:gravity="top|left"
+        android:hint="tutorial / assignment information"
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:minLines="10"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_title_et" />
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/sign_in_btn_bng"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:text="Back"
+        android:textSize="@dimen/sign_in_btn_text_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/abstracts_et" />
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.Dashboard">
+
+    <TextView
+        android:id="@+id/student_name_id_tv"
+        android:layout_width="270dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="4dp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/little_white_black"
+        android:textSize="@dimen/app_name_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/notice_tv"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@color/c_havent_gray"
+        android:padding="10dp"
+        android:text="Notification"
+        android:textColor="@color/black"
+        android:textSize="@dimen/notice_text_size"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@id/student_name_id_tv"
+        tools:layout_editor_absoluteX="278dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notice_tv"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="HardcodedText">
+
+            <com.transferwise.sequencelayout.SequenceLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.transferwise.sequencelayout.SequenceStep
+                    android:id="@+id/first_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:anchor="1."
+                    app:subtitle="Submission: 3 DAY LEFT \n\nSTATUS: PENDING\n\nSUBMITTED: 1"
+                    app:subtitleTextAppearance="@style/vertical_progress_bar_subtitle"
+                    app:title="TOPIC SUBMIT"
+                    app:titleTextAppearance="@style/vertical_progress_bar_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/topics_submit_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="@color/sign_in_btn_bng"
+                            android:padding="15dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/topics_detail_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/orange_bng"
+                            android:padding="15dp"
+                            android:text="Detail"
+                            android:textAlignment="center"
+                            android:textColor="@color/little_white_black"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </com.transferwise.sequencelayout.SequenceStep>
+
+                <com.transferwise.sequencelayout.SequenceStep
+                    android:id="@+id/second_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:anchor="2."
+                    app:subtitle="Submission: 10 DAY LEFT \n\nSTATUS: WAITING\n\nSUBMITTED: 1"
+                    app:subtitleTextAppearance="@style/vertical_progress_bar_subtitle"
+                    app:title="PROPOSAL SUBMIT"
+                    app:titleTextAppearance="@style/vertical_progress_bar_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/proposal_ppt_slide_submit_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="@color/sign_in_btn_bng"
+                            android:padding="15dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/proposal_ppt_slide_detail_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/orange_bng"
+                            android:padding="15dp"
+                            android:text="Detail"
+                            android:textAlignment="center"
+                            android:textColor="@color/little_white_black"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </com.transferwise.sequencelayout.SequenceStep>
+
+                <com.transferwise.sequencelayout.SequenceStep
+                    android:id="@+id/fourth_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:anchor="3."
+                    app:subtitle="Submission: 24 DAY LEFT \n\nSTATUS: WAITING\n\nSUBMITTED: 1"
+                    app:subtitleTextAppearance="@style/vertical_progress_bar_subtitle"
+                    app:title="FINAL PROEJCT SUBMIT"
+                    app:titleTextAppearance="@style/vertical_progress_bar_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/final_draft_submit_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="@color/sign_in_btn_bng"
+                            android:padding="15dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/final_draft_detail_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/orange_bng"
+                            android:padding="15dp"
+                            android:text="Detail"
+                            android:textAlignment="center"
+                            android:textColor="@color/little_white_black"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </com.transferwise.sequencelayout.SequenceStep>
+
+                <com.transferwise.sequencelayout.SequenceStep
+                    android:id="@+id/fifth_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:anchor="4."
+                    app:subtitle="Submission: 31 DAY LEFT \n\nSTATUS: WAITING\n\nSUBMITTED: 1"
+                    app:subtitleTextAppearance="@style/vertical_progress_bar_subtitle"
+                    app:title="FINAL PROPOSAL PRESENTATION SLIDE SUBMISSION"
+                    app:titleTextAppearance="@style/vertical_progress_bar_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/final_ppt_slide_submit_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="@color/sign_in_btn_bng"
+                            android:padding="15dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/final_ppt_slide_detail_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/orange_bng"
+                            android:padding="15dp"
+                            android:text="Detail"
+                            android:textAlignment="center"
+                            android:textColor="@color/little_white_black"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </com.transferwise.sequencelayout.SequenceStep>
+
+                <com.transferwise.sequencelayout.SequenceStep
+                    android:id="@+id/seventh_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:anchor="5."
+                    app:subtitle="Submission: 38 DAY LEFT \n\nSTATUS: WAITING\n\nSUBMITTED: 1"
+                    app:subtitleTextAppearance="@style/vertical_progress_bar_subtitle"
+                    app:title="POSTER SUBMISSION"
+                    app:titleTextAppearance="@style/vertical_progress_bar_title">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/poster_submit_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="@color/sign_in_btn_bng"
+                            android:padding="15dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/poster_detail_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/orange_bng"
+                            android:padding="15dp"
+                            android:text="Detail"
+                            android:textAlignment="center"
+                            android:textColor="@color/little_white_black"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </com.transferwise.sequencelayout.SequenceStep>
+
+            </com.transferwise.sequencelayout.SequenceLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
